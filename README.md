@@ -1,4 +1,4 @@
-# ai_powerred_ecommerce_product_detail_generator
+AI-Powered E-Commerce Product Description Generator
 
 AI-Powered E-Commerce Product Description Generator
 
