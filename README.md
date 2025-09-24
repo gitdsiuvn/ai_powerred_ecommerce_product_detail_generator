@@ -1,5 +1,7 @@
 AI-Powered E-Commerce Product Description Generator
 
+From images to detailed product data (with title, sku, short & long descriptions, approx pricing, etc). 
+
 This project automates the toughest part of listing products online — writing product content and pricing.
 Just drop in product images and the tool does the rest:
 
