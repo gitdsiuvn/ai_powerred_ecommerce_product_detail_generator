@@ -1,8 +1,6 @@
 AI-Powered E-Commerce Product Description Generator
 
-AI-Powered E-Commerce Product Description Generator
-
-This project automates the toughest part of listing products online—writing product content and pricing.
+This project automates the toughest part of listing products online — writing product content and pricing.
 Just drop in product images and the tool does the rest:
 
 🔍 Image understanding – analyzes product photos to identify key features, style, and category
@@ -12,3 +10,5 @@ Just drop in product images and the tool does the rest:
 💰 Smart pricing estimate – suggests a rough selling price based on category, quality, and market trends
 
 📦 Platform-ready output – compiles everything into a clean JSON array compatible with WooCommerce, Meesho, Amazon, and other marketplaces
+
+This is a desktop GUI automation code. To use it , users must keep chatgpt open in browser and will have to make element changes (for detection of buttons on GUI).
