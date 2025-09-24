@@ -1,4 +1,4 @@
-# run from python 3.11(2) open chatgpt in chrome at 80% zoom
+
 import os
 import time
 import pyautogui
@@ -7,25 +7,33 @@ import json
 import random
 
 time.sleep(5)
+
+#prompt to generate the content
 promptt = "write a product description for the uploaded image for ecommerce platforms. Make it seo friendly and selling. Also suggest a good price to sell it in india. make it in json. Properties to mention in json: name, sku, length in cm, breadth in cm, height in cm, weight in grams, description, short description, price in INR. do not write units for length, breath, height, weight and price. Exact attribute names to use: name, sku, length, breadth, height, weight, description, short_description, price"
 
+#replace this file name and directory with local directory, this ensures there is no repeated implementation for the same products
 file_name_done = "C:/Users/dr275/OneDrive/Desktop/wwg_ap/files/doneproduct.txt"
 f = open(file_name_done, "r", encoding='utf8')
 strcontent = f.read()
+
+
 done_file_array = strcontent.split("; ")
 print("done_file_array : ", done_file_array)
 f.close()
 
+# replace with the folder containing images of all products.
 directoryy = "C:/Users/dr275/OneDrive/Desktop/designs and videos/bestservicependrive/co2 desgins/co2 desgin/"
 foldernamelist = os.listdir(directoryy)
 
 for foldername in foldernamelist:
+    # incase there are subfolders then os.listdir needs to be called heirerchially
     filenamelist = os.listdir(directoryy + foldername + "/jpg/")
     print("FOLDER : ", foldername)
     for file_name_text in filenamelist:
         print("FILE NAME : ", file_name_text)
         try:
             fname = directoryy + foldername + "/jpg/" + file_name_text
+            #checks if the file is not already done. 
             if fname not in done_file_array:
                 print("doing this file")
                 try:
@@ -154,4 +162,5 @@ for foldername in foldernamelist:
                     print("file write exception ", e)
 
         except Exception as ee:
-            print("qq", ee)
+
+            print("Exception", ee)
